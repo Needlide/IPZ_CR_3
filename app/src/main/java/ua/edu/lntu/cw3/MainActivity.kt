@@ -38,7 +38,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun MainApp(modifier: Modifier = Modifier) {
     LazyColumn{
-        items(20) {
+        items(40) {
             index -> Row(Modifier.padding(16.dp)){
                 Column {
                     ListItem(Modifier.padding(8.dp), "item: " + (index + 1), "button: " + (index * index + 1))
