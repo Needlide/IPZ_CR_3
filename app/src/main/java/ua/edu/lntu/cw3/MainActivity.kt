@@ -39,9 +39,9 @@ class MainActivity : ComponentActivity() {
 fun MainApp(modifier: Modifier = Modifier) {
     LazyColumn{
         items(20) {
-            _ -> Row(Modifier.padding(8.dp)){
+            index -> Row(Modifier.padding(16.dp)){
                 Column {
-                    ListItem()
+                    ListItem(Modifier.padding(8.dp))
                 }
             Column {
                 ListItem()
