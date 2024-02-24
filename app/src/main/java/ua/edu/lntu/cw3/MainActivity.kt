@@ -42,10 +42,10 @@ fun MainApp(modifier: Modifier = Modifier) {
                 Column {
                     ListItem(Modifier.padding(8.dp), "item: " + (index + 1), "button: " + (index * index + 1))
                 }
-            Column {
-                ListItem(Modifier.padding(8.dp), "item: " + (index + 2), "button: " + ((index + 2) * (index + 1)))
+                Column {
+                    ListItem(Modifier.padding(8.dp), "item: " + (index + 2), "button: " + ((index + 2) * (index + 1)))
+                }
             }
-        }
         }
     }
 }
