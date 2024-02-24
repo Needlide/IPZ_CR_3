@@ -3,6 +3,7 @@ package ua.edu.lntu.cw3
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -27,7 +28,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("Android")
+                    MainApp()
                 }
             }
         }
@@ -39,6 +40,12 @@ fun MainApp(modifier: Modifier = Modifier) {
     LazyColumn{
         items(20) {
             _ -> Row(Modifier.padding(8.dp)){
+                Column {
+                    ListItem()
+                }
+            Column {
+                ListItem()
+            }
         }
         }
     }
