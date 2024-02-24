@@ -41,10 +41,10 @@ fun MainApp(modifier: Modifier = Modifier) {
         items(20) {
             index -> Row(Modifier.padding(16.dp)){
                 Column {
-                    ListItem(Modifier.padding(8.dp))
+                    ListItem(Modifier.padding(8.dp), "item: " + (index + 1), "button: " + (index * index + 1))
                 }
             Column {
-                ListItem()
+                ListItem(Modifier.padding(8.dp))
             }
         }
         }
